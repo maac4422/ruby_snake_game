@@ -51,7 +51,6 @@ module View
     end
 
     def handle_key_event(event)
-      puts(event.key)
       case event.key
       when "up"
         @app.send_action(:change_direction, Model::Direction::UP)
